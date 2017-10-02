@@ -1,0 +1,21 @@
+﻿  ShaderProgram.cpp
+  Matrix.cpp
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(148): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(149): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(150): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(151): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(165): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(166): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(167): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(168): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(172): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(173): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(175): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(213): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(214): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  main.cpp
+  Generating Code...
+  LINK : C:\Program Files\Git\ajf500-homework\hw01 - Copy\hw01\Debug\hw01.exe not found or not built by the last incremental link; performing full link
+  hw01.vcxproj -> C:\Program Files\Git\ajf500-homework\hw01 - Copy\hw01\Debug\hw01.exe
+  hw01.vcxproj -> C:\Program Files\Git\ajf500-homework\hw01 - Copy\hw01\Debug\hw01.pdb (Partial PDB)
