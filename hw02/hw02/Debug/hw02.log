@@ -1,21 +1,30 @@
-﻿  ShaderProgram.cpp
-  Matrix.cpp
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(148): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(149): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(150): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(151): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(165): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(166): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(167): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(168): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(172): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(173): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(174): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(175): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(213): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\program files\git\ajf500-homework\hw01 - copy\hw01\matrix.cpp(214): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+﻿C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(387,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (hw01.vcxproj).  This can lead to incorrect clean and rebuild behavior.
   main.cpp
-  Generating Code...
-  LINK : C:\Program Files\Git\ajf500-homework\hw01 - Copy\hw01\Debug\hw01.exe not found or not built by the last incremental link; performing full link
-  hw01.vcxproj -> C:\Program Files\Git\ajf500-homework\hw01 - Copy\hw01\Debug\hw01.exe
-  hw01.vcxproj -> C:\Program Files\Git\ajf500-homework\hw01 - Copy\hw01\Debug\hw01.pdb (Partial PDB)
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(86): warning C4305: '=': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(87): warning C4305: '=': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(92): warning C4305: '=': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(93): warning C4305: '=': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(97): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(98): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(99): warning C4305: '=': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(100): warning C4305: '=': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(122): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(123): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(183): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(187): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(193): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(194): warning C4804: '<=': unsafe use of type 'bool' in operation
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(197): warning C4804: '<=': unsafe use of type 'bool' in operation
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(203): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(204): warning C4804: '<=': unsafe use of type 'bool' in operation
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(207): warning C4804: '<=': unsafe use of type 'bool' in operation
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(213): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(218): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(224): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(229): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(257): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(257): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(272): warning C4838: conversion from 'double' to 'float' requires a narrowing conversion
+c:\program files\git\ajf500-homework\hw02\hw02\main.cpp(272): warning C4305: 'initializing': truncation from 'double' to 'float'
+  hw02.vcxproj -> C:\Program Files\Git\ajf500-homework\hw02\hw02\Debug\hw02.exe
+  hw02.vcxproj -> C:\Program Files\Git\ajf500-homework\hw02\hw02\Debug\hw02.pdb (Partial PDB)

@@ -39,13 +39,13 @@
     <None Include="fragment_textured.glsl" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="..\..\..\CS3113\assets\graphics\Puzzle assets (80 assets)\PNG\element_blue_square.png">
-      <Filter>Resource Files</Filter>
-    </Image>
     <Image Include="..\..\..\CS3113\assets\graphics\Puzzle assets (80 assets)\PNG\ballGrey.png">
       <Filter>Resource Files</Filter>
     </Image>
     <Image Include="..\..\..\CS3113\assets\graphics\Puzzle assets (80 assets)\PNG\element_purple_square.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="..\..\..\CS3113\assets\graphics\Medals (30 assets)\PNG\shaded_medal1.png">
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
