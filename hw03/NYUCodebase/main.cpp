@@ -301,6 +301,8 @@ int main(int argc, char *argv[])
 	glUseProgram(program.programID);
 	float lastFrameTicks = 0.0f;
 	GLuint fontSheet = LoadTexture(RESOURCE_FOLDER"font1.png");
+	glEnable(GL_BLEND);
+	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	RenderGame(state);
 	state.mode = 0;
 	while (!done) {
@@ -344,6 +346,8 @@ int main(int argc, char *argv[])
 			}
 		}
 		else if (state.mode == 2) {
+			glEnable(GL_BLEND);
+			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 			glUseProgram(program.programID);
 			program.SetProjectionMatrix(projectionMatrix);
 			modelviewMatrix.Identity();
@@ -352,6 +356,8 @@ int main(int argc, char *argv[])
 			DrawText(&program, fontSheet, "You Win!", 0.25f, 0.00000f);
 		}
 		else if (state.mode == 3) {
+			glEnable(GL_BLEND);
+			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 			glUseProgram(program.programID);
 			program.SetProjectionMatrix(projectionMatrix);
 			modelviewMatrix.Identity();
