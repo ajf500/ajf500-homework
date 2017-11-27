@@ -6,6 +6,7 @@
 #include <SDL.h>
 #include <SDL_opengl.h>
 #include <SDL_image.h>
+#include <SDL_mixer.h>
 #include "ShaderProgram.h"
 #include "Matrix.h"
 #define STB_IMAGE_IMPLEMENTATION
@@ -152,7 +153,12 @@ int main(int argc, char *argv[])
 	Matrix modelviewMatrix;
 	Matrix playerMatrix;
 	float lastFrameTicks = 0.0f;
-
+	Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 4096);
+	Mix_Chunk *someSound;
+	someSound = Mix_LoadWAV("interaction.wav");
+	Mix_Music *music;
+	music = Mix_LoadMUS("theme.mp3");
+	Mix_PlayMusic(music, -1);
 	while (!done) {
 		float ticks = (float)SDL_GetTicks() / 1000.0f;
 		float elapsed = ticks - lastFrameTicks;
@@ -187,6 +193,7 @@ int main(int argc, char *argv[])
 		}
 		player.collidedJumpy = player.CollidesWith(jumpy);
 		if (player.collidedJumpy == true) {
+			Mix_PlayChannel(-1, someSound, 0);
 			player.yvelocity = 7;
 			player.y += player.yvelocity * elapsed;
 		}
@@ -219,7 +226,8 @@ int main(int argc, char *argv[])
 		}
 
 	}
-
+	Mix_FreeChunk(someSound);
+	Mix_FreeMusic(music);
 	SDL_Quit();
 	return 0;
 }

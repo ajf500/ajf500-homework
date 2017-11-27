@@ -90,6 +90,10 @@
   <ItemGroup>
     <Image Include="arne_sprites.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="interaction.wav" />
+    <Media Include="theme.mp3" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

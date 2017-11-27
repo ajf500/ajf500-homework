@@ -43,4 +43,10 @@
       <Filter>Resource Files</Filter>
     </Image>
   </ItemGroup>
+  <ItemGroup>
+    <Media Include="interaction.wav">
+      <Filter>Resource Files</Filter>
+    </Media>
+    <Media Include="theme.mp3" />
+  </ItemGroup>
 </Project>
