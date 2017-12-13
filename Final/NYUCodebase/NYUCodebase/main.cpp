@@ -231,7 +231,8 @@ public:
 	Entity slug;
 	GLuint fontSheet;
 	bool stop = false;
-	float shake = 0.23;
+	float shake = 0.3;
+	int shakeDirection = 0;
 	float shaketime = 0.0;
 	bool falling = false;
 	bool musicStart = false;
@@ -242,6 +243,7 @@ public:
 	Mix_Chunk *fall;
 	Mix_Chunk *bounce;
 	Mix_Chunk *damage;
+	bool resumeMusic = false;
 
 };
 GameState state;
@@ -377,6 +379,9 @@ void RenderGame(GameState &state) {
 		slug.y = -50.0;
 	}
 	else if (state.level == 2) {
+		if (state.resumeMusic == true) {
+			Mix_PlayMusic(state.levelMusic, -1);
+		}
 		for (int i = 0; i < 60; i++) {
 			platforms.push_back(Entity(-3.55f + 0.3f*i, -0.5f, 0.45f, 0.5f, platformAnimations, 0.0f, 0.0f, 0.0f, 0.0f, true, 'g'));
 		}
@@ -455,6 +460,7 @@ void RenderGame(GameState &state) {
 		for (int i = 0; i < 3; i++) {
 			ghostPlatforms.push_back(Entity(0.65f + 0.3f*i, 2.0f, 0.45f, 0.5f, platformAnimations, 0.0f, 0.0f, 0.0f, 0.0f, true, 'g'));
 		}
+		state.resumeMusic = false;
 		block.y = -10.25;
 		block.dormant = true;
 		flag.y = -8.5f;
@@ -690,8 +696,20 @@ void UpdateGame(GameState &state, ShaderProgram& program, float elapsed) {
 		state.shaketime += elapsed;
 		if (state.shaketime > 1.0) {
 			Mix_PlayChannel(-1, state.bounce, 0);
-			state.shake = (-state.shake);
-			state.projectionMatrix.SetOrthoProjection(-3.55f + state.shake, 3.55f + state.shake, -2.0f + state.shake, 2.0f + state.shake, -1.0f + state.shake, 1.0f + state.shake);
+			if (state.shakeDirection == 2) {
+				state.shakeDirection = 1;
+			}
+			else {
+				state.shakeDirection++;
+			}
+			state.shake = -1*(state.shake);
+			if (state.shakeDirection == 1) {
+				state.projectionMatrix.SetOrthoProjection(-3.55f + state.shake, 3.55f + state.shake, -2.0f, 2.0f, -1.0f, 1.0f);
+			}
+			else if (state.shakeDirection == 2) {
+				state.projectionMatrix.SetOrthoProjection(-3.55f, 3.55f, -2.0f + state.shake, 2.0f + state.shake, -1.0f, 1.0f);
+			}
+			
 		}
 		if (state.shaketime > 3.0) {
 			state.shake = 0;
@@ -1033,12 +1051,13 @@ int main(int argc, char *argv[])
 			if (keys[SDL_SCANCODE_RETURN]) {
 				glClear(GL_COLOR_BUFFER_BIT);
 				state.lifeTotal = 3;
+				state.resumeMusic = true;
 				RenderGame(state);
 				state.mode = 2;
 			}
 		}
 		if (state.mode == 1) {
-			glClearColor(0.0f, 0.0f, 255.0f, 0.0f);
+			glClearColor(0.0f, 0.5f, 1.0f, 0.0f);
 			glEnable(GL_BLEND);
 			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 			glUseProgram(program.programID);
@@ -1061,7 +1080,7 @@ int main(int argc, char *argv[])
 		if (state.mode == 2) {
 			glEnable(GL_BLEND);
 			glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-			glClearColor(1.0f, 1.0f, 1.0f, 0.0f);
+			glClearColor(0.0f, 0.5f, 1.0f, 0.0f);
 			UpdateGame(state, program, elapsed);
 		}
 		SDL_GL_SwapWindow(displayWindow);
